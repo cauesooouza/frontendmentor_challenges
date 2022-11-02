@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+/* font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif; */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+body p {
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    height: 450px;
+}
+
+.perfum {
+    display: contents;
+}
+
+.perfum picture {
+    display: contents;
+}
+
+.perfum img {
+    width: 300px;
+    height: 450px;
+    border-radius: 1rem 0 0 1rem;
+    filter: brightness(90%);
+}
+
+.card-body {
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    max-width: 300px;
+    height: 100%;
+    padding: 1.3rem 2rem;
+    border-radius: 0 1rem 1rem 0;
+}
+
+h5 {
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    line-height: 2rem;
+    color: hsl(212, 21%, 14%);
+}
+
+.card-body p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.price .promo-price {
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+}
+
+.price .old-price {
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+
+.card-body button {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: hsl(158, 36%, 37%);
+    outline: none;
+    border: none;
+    padding: 1rem;
+    border-radius: .5rem;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif; 
+    cursor: pointer;
+    transition: filter .3s ease-in-out;
+}
+
+
+.card-body button:hover {
+    filter: brightness(80%);
+}
+
+
+@media (max-width: 425px) {
+    .card {
+        flex-direction: column;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .perfum img {
+        width: 300px;
+        height: 225px;
+        object-fit: cover;
+        border-radius: 1rem 1rem 0 0;
+    }
+    .card-body {
+        border-radius: 0 0 1rem 1rem;
+        gap: .7rem;
+        padding: 1rem;
+    }
+
+    .price {
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+}

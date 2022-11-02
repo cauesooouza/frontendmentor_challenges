@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor Challenges</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./product-preview-card-component-main/images/favicon-32x32.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100;1,500&display=swap');
+
+        body {
+            background-color: rgb(242, 235, 227);
+        }
+
+        main {
+            margin: 5rem auto;
+            max-width: 1024px;
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        article {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 350px;
+            height: auto;
+            border: 1px solid rgb(219, 229, 230);
+            border-radius: 1rem;
+            background-color: rgb(246, 245, 243);
+            overflow: hidden;
+        }
+
+        article picture {
+            display: flex;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        article img {
+            transform: scale(1.2);
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        article img:hover {
+            transform: scale(1.3);
+        }
+
+        article h2 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.3rem;
+        }
+
+        article a {
+            color: inherit;
+            text-decoration: none;
+            transition: text-decoration .3s ease-in-out;
+        }
+
+        article a:hover {
+            text-decoration: underline;
+        }
+
+        article .techs {
+            display: flex;
+            justify-content: flex-end;
+            padding: 0 0 1rem 0;
+            margin-right: 2rem;
+            width: 100%;
+        }
+
+        article .techs span {
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0 .2rem;
+        }
+
+        article .techs span.html {
+            color: rgb(106, 190, 205);
+        }
+
+        article .techs span.css {
+            color: rgb(62, 84, 163);
+            ;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <article>
+            <a href="./product-preview-card-component-main/index.html">
+                <picture>
+                    <img src="https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Screenshots/vvsubgheik6nqxugig8u.jpg"
+                        alt="challenge 01">
+                </picture>
+            </a>
+            <a href="./product-preview-card-component-main/index.html">
+                <h2>Product preview card component</h2>
+            </a>
+            <div class="techs">
+                <span class="html">html</span>
+                <span class="css">css</span>
+            </div>
+        </article>
+    </main>
+</body>
+</html>
