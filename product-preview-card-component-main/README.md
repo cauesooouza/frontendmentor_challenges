@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://replit.com/@cauesooouza/Product-preview-card-component?v=1](https://replit.com/@cauesooouza/Product-preview-card-component?v=1)
-- Live Site URL: [https://product-preview-card-component.cauesooouza.repl.co/](https://product-preview-card-component.cauesooouza.repl.co/)
+- Solution URL: [https://github.com/cauesooouza/frontendmentor_challenges/tree/main/product-preview-card-component-main](https://github.com/cauesooouza/frontendmentor_challenges/tree/main/product-preview-card-component-main)
+- Live Site URL: [https://cauesooouza.github.io/frontendmentor_challenges/product-preview-card-component-main/](https://cauesooouza.github.io/frontendmentor_challenges/product-preview-card-component-main/)
 
 ## My process
 
