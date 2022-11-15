@@ -30,7 +30,7 @@ main {
 
     article {
         width:85%;
-        max-width: 340px;
+        max-width: 320px;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -38,23 +38,26 @@ main {
         gap: 1rem;
         background-color: $white;
         padding: 1rem;
-        border-radius: 1.5rem;
+        border-radius: 1.2rem;
 
         img {
             width: 100%;
             border-radius: .5rem;
         }
         
-        h1 {
+        h2 {
             text-align: center;
             color: $dark-blue;
+            font-size: 22px;
+            margin-top: .2rem;
         }
 
         p {
             text-align: center;
             color: $grayish-blue;
-            padding: 0 1rem;
-            margin-bottom: 1rem;
+            font-size: 15px;
+            padding: 0 1.2rem;
+            margin-bottom: 1.6rem;
         }
     }
 }
