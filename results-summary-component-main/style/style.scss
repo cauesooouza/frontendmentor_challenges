@@ -47,7 +47,10 @@ body {
 }
 
 main.container {
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
     height: 100vh;
 
     div.app {
