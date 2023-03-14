@@ -32,7 +32,7 @@ main.container div.app div.result {
   padding: 2.5rem 3rem;
   text-align: center;
 }
-main.container div.app div.result span.title {
+main.container div.app div.result h1.title {
   font-size: 1.5rem;
   color: hsl(241, 100%, 89%);
   font-weight: 700;
