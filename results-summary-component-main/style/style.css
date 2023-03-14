@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  background-color: #eee;
+}
+
+div.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+div.container div.app {
+  display: flex;
+  width: 700px;
+  background: #fff;
+  border-radius: 1.5rem;
+}
+div.container div.app div.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(180deg, hsl(252, 100%, 67%) 0%, hsl(241, 81%, 54%) 100%);
+  width: 50%;
+  border-radius: 1.5rem;
+  padding: 2.5rem 3rem;
+  gap: 1.5rem;
+  text-align: center;
+}
+div.container div.app div.result span.title {
+  font-size: 1.5rem;
+  color: hsl(241, 100%, 89%);
+  font-weight: 700;
+}
+div.container div.app div.result div.score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(hsl(256, 72%, 46%) 0%, hsla(241, 72%, 46%, 0) 100%);
+  padding: 3rem 4rem;
+  border-radius: 50%;
+}
+div.container div.app div.result div.score span.highlight {
+  font-size: 4rem;
+  font-weight: 800;
+  color: hsl(221, 100%, 96%);
+}
+div.container div.app div.result div.score span.ofhundred {
+  color: rgba(255, 255, 255, 0.4);
+}
+div.container div.app div.result span.greatings {
+  color: #fff;
+  font-weight: 700;
+  font-size: 2rem;
+}
+div.container div.app div.result p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.125rem;
+}
+div.container div.app div.summary {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 2.5rem;
+  background: #fff;
+  border-radius: 1.5rem;
+}
+div.container div.app div.summary span.title {
+  color: hsl(224, 30%, 27%);
+  font-size: 1.5rem;
+  font-weight: 700;
+  align-self: flex-start;
+}
+div.container div.app div.summary div.skill {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  font-size: 1.125rem;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+div.container div.app div.summary div.skill div:first-child {
+  display: flex;
+  position: absolute;
+  left: 10px;
+  justify-content: center;
+  gap: 0.5rem;
+}
+div.container div.app div.summary div.skill div:last-child {
+  display: flex;
+  position: absolute;
+  right: 10px;
+  justify-content: center;
+}
+div.container div.app div.summary div.skill div:last-child span {
+  font-weight: 700;
+}
+div.container div.app div.summary div.skill div:last-child span:first-child {
+  color: hsl(224, 30%, 27%);
+  margin-right: 10px;
+}
+div.container div.app div.summary div.skill div:last-child span:last-child {
+  color: rgba(128, 128, 128, 0.6);
+}
+div.container div.app div.summary div.reaction {
+  background: rgba(255, 87, 87, 0.05);
+}
+div.container div.app div.summary div.reaction div:first-child span {
+  color: hsl(0, 100%, 67%);
+}
+div.container div.app div.summary div.reaction:hover {
+  background: rgba(255, 87, 87, 0.1);
+}
+div.container div.app div.summary div.memory {
+  background: rgba(255, 176, 31, 0.05);
+}
+div.container div.app div.summary div.memory div:first-child span {
+  color: hsl(39, 100%, 56%);
+}
+div.container div.app div.summary div.memory:hover {
+  background: rgba(255, 176, 31, 0.1);
+}
+div.container div.app div.summary div.verbal {
+  background: hsla(166, 100%, 37%, 0.05);
+}
+div.container div.app div.summary div.verbal div:first-child span {
+  color: hsl(166, 100%, 37%);
+}
+div.container div.app div.summary div.verbal:hover {
+  background: hsla(166, 100%, 37%, 0.1);
+}
+div.container div.app div.summary div.visual {
+  background: hsla(234, 85%, 45%, 0.05);
+}
+div.container div.app div.summary div.visual div:first-child span {
+  color: hsl(234, 85%, 45%);
+}
+div.container div.app div.summary div.visual:hover {
+  background: hsla(234, 85%, 45%, 0.1);
+}
+div.container div.app div.summary button {
+  padding: 1rem;
+  border-radius: 2rem;
+  width: 100%;
+  outline: none;
+  border: 0;
+  background: hsl(224, 30%, 27%);
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 2em;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,241 @@
+// ## Colors
+
+// ### Primary
+
+// - Light red: hsl(0, 100%, 67%)
+// - Orangey yellow: hsl(39, 100%, 56%)
+// - Green teal: hsl(166, 100%, 37%)
+// - Cobalt blue: hsl(234, 85%, 45%)
+
+// ## Gradients
+
+// - Light slate blue (background): hsl(252, 100%, 67%)
+// - Light royal blue (background): hsl(241, 81%, 54%)
+
+// - Violet blue (circle): hsla(256, 72%, 46%, 1)
+// - Persian blue (circle): hsla(241, 72%, 46%, 0)
+
+// ### Neutral
+
+// - White: hsl(0, 0%, 100%)
+// - Pale blue: hsl(221, 100%, 96%)
+// - Light lavender: hsl(241, 100%, 89%)
+// - Dark gray blue: hsl(224, 30%, 27%)
+
+// ## Typography
+
+// ### Body Copy
+
+// - Font size (paragraphs): 18px
+
+// ### Font
+
+// - Family: [Hanken Grotesk](https://fonts.google.com/specimen/Hanken+Grotesk)
+// - Weights: 500, 700, 800
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    background-color: #eee;
+}
+
+div.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+
+    div.app {
+        display: flex;
+        width: 700px;
+        background: #fff;
+        border-radius: 1.5rem;
+
+
+        div.result {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: linear-gradient(180deg, hsl(252, 100%, 67%) 0%, hsl(241, 81%, 54%) 100%);
+            width: 50%;
+            border-radius: 1.5rem;
+            padding: 2.5rem 3rem;
+            gap: 1.5rem;
+            text-align: center;
+
+            span.title {
+                font-size: 1.5rem;
+                color: hsl(241, 100%, 89%);
+                font-weight: 700;
+            }
+
+            div.score {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background: linear-gradient(hsla(256, 72%, 46%, 1) 0%, hsla(241, 72%, 46%, 0) 100%);
+                padding: 3rem 4rem;
+                border-radius: 50%;
+
+                span.highlight {
+                    font-size: 4rem;
+                    font-weight: 800;
+                    color: hsl(221, 100%, 96%);
+                }
+
+                span.ofhundred {
+                    color: rgba(255, 255, 255, 0.4);
+                }
+            }
+
+            span.greatings {
+                color: #fff;
+                font-weight: 700;
+                font-size: 2rem;
+            }
+
+            p {
+                color: rgba(255, 255, 255, 0.60);
+                font-size: 1.125rem;
+            }
+        }
+
+        div.summary {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            padding: 2.5rem;
+            background: #fff;
+            border-radius: 1.5rem;
+
+
+            span.title {
+                color: hsl(224, 30%, 27%);
+                font-size: 1.5rem;
+                font-weight: 700;
+                align-self: flex-start;
+            }
+
+            div.skill {
+                position: relative;
+                display: flex;
+                align-items: center;
+                width: 100%;
+                border-radius: .5rem;
+                padding: 1.5rem;
+                margin: 1rem 0;
+                font-size: 1.125rem;
+                cursor: pointer;
+                transition: background .3s ease-in-out;
+
+                div:first-child {
+                    display: flex;
+                    position: absolute;
+                    left: 10px;
+                    justify-content: center;
+                    gap: .5rem;
+                }
+
+                div:last-child {
+                    display: flex;
+                    position: absolute;
+                    right: 10px;
+                    justify-content: center;
+
+                    span {
+                        font-weight: 700;
+                    }
+
+                    span:first-child {
+                        color: hsl(224, 30%, 27%);
+                        margin-right: 10px;
+                    }
+
+                    span:last-child {
+                        color: rgba(128, 128, 128, 0.60);
+                    }
+                }
+            }
+
+            div.reaction {
+                background: rgba(255, 87, 87, 0.05);
+
+                div:first-child {
+                    span {
+                        color: hsl(0, 100%, 67%);
+                    }
+                }
+
+                &:hover {
+                    background: rgba(255, 87, 87, 0.1);
+
+                }
+            }
+
+            div.memory {
+                background: rgba(255, 176, 31, 0.05);
+
+                div:first-child {
+                    span {
+                        color: hsl(39, 100%, 56%);
+                    }
+                }
+
+                &:hover {
+                    background: rgba(255, 176, 31, 0.1);
+                }
+            }
+
+            div.verbal {
+                background: hsl(166, 100%, 37%, 0.05);
+
+                div:first-child {
+                    span {
+                        color: hsl(166, 100%, 37%);
+                    }
+                }
+
+                &:hover {
+                    background: hsl(166, 100%, 37%, 0.1);
+                }
+            }
+
+            div.visual {
+                background: hsl(234, 85%, 45%, 0.05);
+
+                div:first-child {
+                    span {
+                        color: hsl(234, 85%, 45%);
+                    }
+                }
+
+                &:hover {
+                    background: hsl(234, 85%, 45%, 0.1);
+                }
+            }
+
+            button {
+                padding: 1rem;
+                border-radius: 2rem;
+                width: 100%;
+                outline: none;
+                border: 0;
+                background: hsl(224, 30%, 27%);
+                color: #fff;
+                font-size: 1rem;
+                cursor: pointer;
+                margin-top: 2em;
+            }
+        }
+    }
+}

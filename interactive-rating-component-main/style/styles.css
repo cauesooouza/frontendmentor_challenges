@@ -7,13 +7,13 @@
 }
 
 body {
-  background-color: hsl(216deg, 12%, 8%);
+  background-color: hsl(216, 12%, 8%);
   font-family: "Overpass", sans-serif;
   height: 100vh;
 }
 body p {
   font-size: 15px;
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
 }
 
 main.container {
@@ -25,7 +25,7 @@ main.container {
   margin: 0 auto;
 }
 main.container .box {
-  background-color: hsla(213deg, 20%, 18%, 0.582);
+  background-color: hsla(213, 20%, 18%, 0.582);
   max-width: 400px;
   display: flex;
   flex-direction: column;
@@ -36,25 +36,24 @@ main.container .box {
 main.container .box .icon {
   display: flex;
   padding: 0.9rem;
-  background-color: hsla(216deg, 12%, 54%, 0.2);
+  background-color: hsla(216, 12%, 54%, 0.2);
   border-radius: 50%;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  color: hsl(25deg, 97%, 53%);
+  color: hsl(25, 97%, 53%);
 }
 main.container .box .round-content {
   border-radius: 1rem !important;
   padding: 0.3rem 1rem;
 }
 main.container .box .title {
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
   font-weight: 700;
   margin: 1.5rem 0 0.5rem;
 }
 main.container .box p {
   font-weight: 400;
-  color: hsl(217deg, 12%, 63%);
+  color: hsl(217, 12%, 63%);
 }
 main.container .box .form {
   display: flex;
@@ -78,15 +77,15 @@ main.container .box .form .ratings label input {
   transition: 0.3s ease-in-out;
 }
 main.container .box .form .ratings label input:checked ~ span {
-  background-color: hsl(217deg, 12%, 63%);
-  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
 }
 main.container .box .form .ratings label span {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: hsla(216deg, 12%, 54%, 0.2);
-  color: hsl(217deg, 12%, 63%);
+  background-color: hsla(216, 12%, 54%, 0.2);
+  color: hsl(217, 12%, 63%);
   width: 45px;
   height: 45px;
   border-radius: 50%;
@@ -94,8 +93,8 @@ main.container .box .form .ratings label span {
   transition: 0.3s ease-in-out;
 }
 main.container .box .form .ratings label span:hover {
-  background-color: hsl(25deg, 97%, 53%);
-  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
 }
 main.container .box .form input {
   outline: none;
@@ -115,13 +114,13 @@ main.container .box .form input[type=submit] {
   font-family: "Overpass", sans-serif;
   letter-spacing: 0.1rem;
   margin-top: 0.5rem;
-  color: hsl(0deg, 0%, 100%);
-  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(25, 97%, 53%);
   transition: 0.3s ease-in-out;
 }
 main.container .box .form input[type=submit]:hover {
-  background-color: hsl(0deg, 0%, 100%);
-  color: hsl(25deg, 97%, 53%);
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
 }
 
 .align-center {
