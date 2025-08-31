@@ -1,4 +1,4 @@
-import data from '../data.json' assert {type: "json"};
+const data = require('../data.json');
 const dataElement = document.querySelector('#data');
 const scoreElement = document.querySelector('.highlight')
 
